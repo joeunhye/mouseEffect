@@ -7,29 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mouse Effect</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
-        integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script defer src="./effect3-js.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script defer src="./effect4-js.js"></script>
 </head>
 
 <body>
     <main>
         <div class="cursor"></div>
 
-        <article class="mouseCont">
-            <p>Never <em>underestimate</em> your own ignorance.</p>
-            <p>네 자신의 무지를 절대 <em>과소평가</em> 하지 마라.</p>
-        </article>
+        <div class="move-image">
+            <div class="mimg"><img src="../assets/img/su05.jpg" alt="이미지"></div>
+            <div class="mtext">
+                <p>Luck is when preparedness meets opportunity.</p>
+                <p>운이란 준비가 기회를 만나는 것이다.</p>
+            </div>
+        </div>
     </main>
 
-    <div class="info left">
+    <div class="info bottom">
         <ul>
             <li>pageX : <span class="pageX">0</span></li>
             <li>pageY : <span class="pageY">0</span></li>
+            <li>mouseX : <span class="mouseX">0</span></li>
+            <li>mouseY : <span class="mouseY">0</span></li>
+            <li>angleX : <span class="angleX">0</span></li>
+            <li>angleY : <span class="angleY">0</span></li>
+            <li>fmouseX : <span class="fmouseX">0</span></li>
+            <li>fmouseY : <span class="fmouseY">0</span></li>
         </ul>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
 
 </body>
 
